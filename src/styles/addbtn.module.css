@@ -1,0 +1,8 @@
+.btnBox{
+    border: 1px solid red;
+}
+button{
+    background-color: green;
+    width: 120px;
+    height: 30px;
+}

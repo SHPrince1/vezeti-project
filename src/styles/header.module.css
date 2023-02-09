@@ -1,0 +1,55 @@
+.parentBox{
+    /* border: 1px solid black; */
+    /* display:flex; */
+    width: 80%;
+    margin: 10px auto;
+    /* padding: 0 10px */
+    background-color: blanchedalmond;
+   
+}
+.logoBox{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px auto; 
+}
+.logoBox input{
+    width:400px;
+    height: 35px;
+    margin: 50px 20px;
+    border-radius: 25px;
+    padding: 5px 20px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.logoBox h1{
+align-items: left;
+text-align:left;
+font-size: 40px;
+color: green;
+font-family: poppins;
+}
+.parentBox h1{
+    /* font-size: 20px; */
+    padding: 20px 20px;
+}
+.imgName{
+    width: 100%;
+    height: 250px;
+    margin-top: -44px;
+}
+
+@media only screen and (max-width: 425px){
+    /*Small smartphones [325px -> 425px]*/
+    
+    .parentBox{
+      border: 1px solid black;
+      width: 99%;
+      margin: 0 auto;
+      height:auto;
+      
+  }
+
+  
+  }

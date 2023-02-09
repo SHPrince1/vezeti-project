@@ -1,0 +1,73 @@
+.parentBox{
+    /* border: 1px solid black; */
+    width: 23%;
+    margin: 0 auto;
+    height:auto;
+    
+}
+.cardBox{
+    /* border: 1px solid red; */
+    /* box-shadow: ; */
+    width:100%;
+    background-color:aliceblue;
+    cursor: pointer;
+    margin: 10px 30px;
+    height: auto;
+}
+.cardBox:hover{
+    border: 5px solid #707070;
+}
+.cardBox:hover .imgBox{
+    border: 2px solid #707070;
+    width:80%;
+   /* padding: 20px; */
+    cursor: pointer;
+    margin: 10px 10px;
+    height: auto;
+}
+.imgBox{
+ /* border: 1px solid blue;    */
+ padding:10px 20px;
+}
+.imgBox img{
+    width: 90%;
+  /* height: 100px; */
+    margin: 0 auto;
+}
+.name{
+    
+    
+    
+    font-weight: bold;
+    font-size: 20px;
+    font-family: poppins;
+    
+   text-transform: capitalize;
+}
+.price{
+    
+    font-weight: bolder;
+    font-size: 25px;
+    
+    text-transform: capitalize;
+
+}
+
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+  }
+  @media only screen and (max-width: 600px){
+  /*Big smartphones [426px -> 600px]*/
+  
+  }
+  @media only screen and (max-width: 425px){
+  /*Small smartphones [325px -> 425px]*/
+  
+  .parentBox{
+    border: 1px solid black;
+    width: 100%;
+    margin: 0 auto;
+    height:auto;
+    
+}
+}

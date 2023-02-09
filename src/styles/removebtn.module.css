@@ -1,0 +1,11 @@
+.btnBox{
+    border: 1px solid red;
+}
+button{
+    width: 120px;
+    height: 30px;
+}
+.remBtn{
+    background-color: red !important;
+
+}

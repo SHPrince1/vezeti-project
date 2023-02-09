@@ -36,3 +36,74 @@
     transform: rotate(360deg);
   }
 }
+input{
+  width:520px;
+  height: 30px;
+  margin: 56px 20px;
+  border-radius: 35px;
+  padding: 5px 20px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+}
+.cardsBox{
+  /* border: 1px solid black; */
+  width: 80%;
+  margin:20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.btnBox{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* @media () {} */
+
+@media only screen and (max-width: 1200px){
+  /*Tablets [601px -> 1200px]*/
+  .cardsBox {
+    width: 79%;
+    margin: 20px auto;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 600px){
+/*Big smartphones [426px -> 600px]*/
+
+.cardsBox {
+  width: 79%;
+  margin: 20px auto;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+}
+@media only screen and (max-width: 425px){
+/*Small smartphones [325px -> 425px]*/
+
+.cardsBox{
+  width: 80%;
+  margin:20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+ input{
+  width:310px;
+  height: 25px;
+  margin: 56px 10px;
+  border-radius: 35px;
+  padding: 5px 20px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+}
+
+}

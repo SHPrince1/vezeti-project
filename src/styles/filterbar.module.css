@@ -1,0 +1,39 @@
+.logoBox input{
+    width:520px;
+    height: 35px;
+    margin: 56px 20px;
+    border-radius: 35px;
+    padding: 5px 20px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+}
+
+select{
+    width:240px;
+    height:35px;
+    border-radius: 20px;
+   text-align: center;
+   padding: 2px 10px;
+}
+.optionS{
+    width:240px;
+    height:35px;
+
+}
+@media only screen and (max-width: 425px){
+    /*Small smartphones [325px -> 425px]*/
+    
+    .logoBox input{
+        width:310px;
+        height: 45px;
+        margin: 56px 10px;
+        border-radius: 35px;
+        padding: 5px 20px;
+        -webkit-border-radius: 35px;
+        -moz-border-radius: 35px;
+        -ms-border-radius: 35px;
+        -o-border-radius: 35px;
+    }
+    }
