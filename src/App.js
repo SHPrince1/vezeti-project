@@ -124,13 +124,13 @@ function App() {
 
       <div className="cardsBox">
         {data.filter((item) => {
-            if (searchTerm === data) {
+            if (searchTerm === "") {
               return item;
             } else if (
               item.categories.toLowerCase().includes(searchTerm.toLowerCase())
             ) {
               return item;
-            }
+            } else return false
           })
           .map((item) => {
             return (
