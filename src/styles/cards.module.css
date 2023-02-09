@@ -70,4 +70,13 @@
     height:auto;
     
 }
+.cardBox{
+    /* border: 1px solid red; */
+    /* box-shadow: ; */
+    width:82%;
+    background-color:aliceblue;
+    cursor: pointer;
+    margin: 10px 30px;
+    height: auto;
+}
 }
