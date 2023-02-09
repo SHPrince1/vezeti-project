@@ -1,24 +1,30 @@
 .parentBox{
     /* border: 1px solid black; */
-    width: 23%;
+    /* border: 1px solid black; */
+    width: 31%;
     margin: 0 auto;
-    height:auto;
-    
+    height: 540px;
 }
 .cardBox{
-    /* border: 1px solid red; */
-    /* box-shadow: ; */
+    /*border: 1px solid red;
+    *//*box-shadow: ;
+    */box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
     width:100%;
-    background-color:aliceblue;
+    background-color:#fff;
     cursor: pointer;
     margin: 10px 30px;
-    height: auto;
+    height: 510px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 .cardBox:hover{
     border: 5px solid #707070;
 }
 .cardBox:hover .imgBox{
-    border: 2px solid #707070;
+    border: 1px solid #707070;
     width:80%;
    /* padding: 20px; */
     cursor: pointer;
@@ -30,8 +36,8 @@
  padding:10px 20px;
 }
 .imgBox img{
-    width: 90%;
-  /* height: 100px; */
+    width: 95%;
+  height: 350px;
     margin: 0 auto;
 }
 .name{
@@ -64,19 +70,18 @@
   /*Small smartphones [325px -> 425px]*/
   
   .parentBox{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100%;
     margin: 0 auto;
     height:auto;
     
 }
 .cardBox{
-    /* border: 1px solid red; */
-    /* box-shadow: ; */
-    width:82%;
-    background-color:aliceblue;
+    
+    width: 100%;
+    background-color: aliceblue;
     cursor: pointer;
-    margin: 10px 30px;
-    height: auto;
+    margin: 7px 0px;
+    height: 520px;
 }
 }

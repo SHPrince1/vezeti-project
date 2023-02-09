@@ -1,8 +1,8 @@
 .parentBox{
-    border:1px solid black;
+    border:1px solid yellow;
     width:80%;
     height: 200px;
-    margin:0 auto;
+    margin:10px auto;
     background-color: yellow;
 }
 .parentBox h6{
@@ -15,7 +15,7 @@
     /*Small smartphones [325px -> 425px]*/
     
     .parentBox{
-      border: 1px solid black;
+      /* border: 1px solid black; */
       width: 100%;
       margin: 0 auto;
       height:auto;
