@@ -12,7 +12,7 @@ const Header = () => {
            
         </div>
         <div className={style.textBox}> 
-          <img src={cart}  className={style.imgName}/>
+          <img src={cart} alt="image" className={style.imgName}/>
         </div>
 
       

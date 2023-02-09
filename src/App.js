@@ -2,9 +2,9 @@ import Header from "./components/header.tsx";
 import "./App.css";
 import Footer from "./components/footer.tsx";
 import Cards from "./components/cards.tsx";
-import AddButton from "./components/add-button.tsx";
-import RemoveBtn from "./components/remove-button.tsx";
-import FilterBar from "./components/filter-bar.tsx";
+// import AddButton from "./components/add-button.tsx";
+// import RemoveBtn from "./components/remove-button.tsx";
+// import FilterBar from "./components/filter-bar.tsx";
 import { useState } from "react";
 // import  from "../src/images/awatch.jpg";
 

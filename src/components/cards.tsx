@@ -8,7 +8,7 @@ const Cards = (props) => {
       <div className={style.parentBox}>
         <div className={style.cardBox}>
           <div className={style.imgBox}>
-            <img src={props.img} />
+            <img src={props.img}  alt="product name"/>
           </div>
 
           <div className={style.nameBox}>
