@@ -123,9 +123,8 @@ function App() {
       />
 
       <div className="cardsBox">
-        {data
-          .filter((item) => {
-            if (searchTerm === "") {
+        {data.filter((item) => {
+            if (searchTerm === data) {
               return item;
             } else if (
               item.categories.toLowerCase().includes(searchTerm.toLowerCase())
