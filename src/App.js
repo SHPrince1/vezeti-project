@@ -175,7 +175,7 @@ const data = [
 
 function App() {
   const [searchTerm, SetSearchTerm] = useState("");
-  const [notFound, setNotFound] = useState("Note Found");
+ 
   return (
     <div className="App">
       <Header />
