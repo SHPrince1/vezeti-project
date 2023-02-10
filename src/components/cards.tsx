@@ -17,6 +17,7 @@ const Cards = (props) => {
           </div>
           <div className={style.priceBox}>
             <p className={style.price}>{props.price}</p>
+          <button>Add to cart</button>
           </div>
         </div>
       </div>
