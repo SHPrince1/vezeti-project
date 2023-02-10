@@ -2,7 +2,7 @@
     /* border: 1px solid black; */
     /* display:flex; */
     width: 80%;
-    margin: 10px auto;
+    margin: 1px auto;
     /* padding: 0 10px */
     background-color: blanchedalmond;
    
@@ -29,6 +29,21 @@ text-align:left;
 font-size: 40px;
 color: green;
 font-family: poppins;
+}
+.links{
+    display: flex;
+    gap: 5px;
+    margin: 15px 30px;
+
+}
+.links h6{
+    font-size: 20px;
+    cursor: pointer;
+    color: #707070;
+}
+.links h6:hover{
+    
+    color: green;
 }
 .parentBox h1{
     /* font-size: 20px; */
