@@ -6,7 +6,7 @@ import Cards from "./components/cards.jsx";
 // import RemoveBtn from "./components/remove-button.tsx";
 // import FilterBar from "./components/filter-bar.tsx";
 import { useState } from "react";
-import Cart from "../src/components/cart"
+import Cart from "../src/components/cart";
 // import  from "../src/images/awatch.jpg";
 
 const data = [
@@ -177,7 +177,7 @@ const data = [
 function App() {
   // const [cart, setCart] = useState({});
   const [searchTerm, SetSearchTerm] = useState("");
- 
+
   return (
     <div className="App">
       <Header />
@@ -210,7 +210,7 @@ function App() {
               />
             );
           })}
-          <Cart />
+        <Cart />
       </div>
       <Footer />
     </div>
