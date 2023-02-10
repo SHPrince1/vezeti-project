@@ -74,9 +74,8 @@ const ProductList = ({ addToCart }) => {
             {product.name}
             {product.price}
             {product.id}
-            <br/>
-            <br />
-            <button onClick={() => addToCart(product)}>Add to Cart</button>
+           
+            <button onClick={() => addToCart(product)}>Add</button>
           </p>
         ))}
       </ul>

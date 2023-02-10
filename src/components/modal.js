@@ -29,18 +29,9 @@ const Modal = (props) => {
           <div className="modal-content">
 
            
-          {/* {dataitem.map((item) => {
-            return (
-              <ItemDetails
-                key={item.id}
-                img={item.img}
-                price={item.price}
-                name={item.name}
-              />
-            );
-          })} */}
-            {/* <button className="cus-btn">Add item</button> */}
+        
             <Cart />
+            <button className="cus-btn" onClick={toggleModal}>Close</button>
           </div>
         </div>
       )}
