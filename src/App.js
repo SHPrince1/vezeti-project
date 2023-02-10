@@ -1,6 +1,6 @@
 import Header from "./components/header.tsx";
 import "./App.css";
-import Footer from "./components/footer.tsx";
+import Footer from "./components/footer.jsx";
 import Cards from "./components/cards.jsx";
 // import AddButton from "./components/add-button.tsx";
 // import RemoveBtn from "./components/remove-button.tsx";
