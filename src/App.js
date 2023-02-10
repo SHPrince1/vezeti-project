@@ -1,4 +1,4 @@
-import Header from "./components/header.tsx";
+import Header from "./components/header.jsx";
 import "./App.css";
 import Footer from "./components/footer.jsx";
 import Cards from "./components/cards.jsx";
