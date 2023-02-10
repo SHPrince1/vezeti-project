@@ -1,5 +1,7 @@
+// @ts-ignore
 import React from "react";
 import style from "../styles/cards.module.css";
+import  Modal  from './modal';
 
 
 const Cards = (props) => {
@@ -17,7 +19,8 @@ const Cards = (props) => {
           </div>
           <div className={style.priceBox}>
             <p className={style.price}>{props.price}</p>
-          <button>Add to cart</button>
+          {/* <button>See Details</button> */}
+          < Modal />
           </div>
         </div>
       </div>

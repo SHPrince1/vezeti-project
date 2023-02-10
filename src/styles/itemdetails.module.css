@@ -1,0 +1,100 @@
+.parentBox{
+    /* border: 1px solid black; */
+    /* border: 1px solid black; */
+    width: 31%;
+    margin: 0 auto;
+    height: 540px;
+}
+.cardBox{
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width:100%;
+    background-color:#fff;
+    cursor: pointer;
+    margin: 0px 0px;
+    line-height: 10px;
+    height: 300px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.cardBox:hover{
+    border: 2px solid #707070;
+}
+.cardBox:hover .imgBox{
+    border: 1px solid #707070;
+    /* width:80%; */
+   /* padding: 20px; */
+   height: 550px;
+    cursor: pointer;
+    margin: 10px 10px;
+    height: auto;
+}
+.imgBox{
+ /* border: 1px solid blue;    */
+ padding:10px 20px;
+}
+.imgBox img{
+    width: 95%;
+  height: 350px;
+    margin: 0 auto;
+}
+.name{
+    
+    
+    
+    font-weight: bold;
+    font-size: 20px;
+    font-family: poppins;
+    
+   text-transform: capitalize;
+}
+.price{
+    
+    font-weight: bolder;
+    font-size: 25px;
+    
+    text-transform: capitalize;
+
+}
+button{
+    width: 110px;
+    height: 30px;
+    text-transform: uppercase;
+    background-color: green;
+    border-radius: 20px;
+    border: none;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+  }
+  @media only screen and (max-width: 600px){
+  /*Big smartphones [426px -> 600px]*/
+  
+  }
+  @media only screen and (max-width: 425px){
+  /*Small smartphones [325px -> 425px]*/
+  
+  .parentBox{
+    /* border: 1px solid black; */
+    width: 100%;
+    margin: 0 auto;
+    height:auto;
+    
+}
+.cardBox{
+    
+    width: 100%;
+    background-color: aliceblue;
+    cursor: pointer;
+    margin: 7px 0px;
+    height: 520px;
+}
+}

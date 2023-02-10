@@ -1,15 +1,10 @@
-import Header from "./components/header.tsx";
-import "./App.css";
-import Footer from "./components/footer.tsx";
-import Cards from "./components/cards.tsx";
-// import AddButton from "./components/add-button.tsx";
-// import RemoveBtn from "./components/remove-button.tsx";
-// import FilterBar from "./components/filter-bar.tsx";
-import { useState } from "react";
-import Cart from "../src/components/cart"
-// import  from "../src/images/awatch.jpg";
+import React, { useState } from "react";
+import "../styles/moda.css";
+import CardsDetails from "../components/item-details";
+import ItemDetails from "../components/item-details";
+import Cart from "../components/cart";
 
-const data = [
+const dataitem = [
   {
     id: 0,
     name: "Watch",
@@ -174,47 +169,47 @@ const data = [
   },
 ];
 
-function App() {
-  // const [cart, setCart] = useState({});
-  const [searchTerm, SetSearchTerm] = useState("");
- 
+const Modal = (props) => {
+  const [modal, setModal] = useState(false);
+
+  const toggleModal = (props) => {
+    setModal(!modal);
+  };
+
+  if (modal) {
+    document.body.classList.add("active-modal");
+  } else {
+    document.body.classList.remove("active-modal");
+  }
+
   return (
-    <div className="App">
-      <Header />
+    <>
+      <button onClick={toggleModal} className="btn-modal">
+        See Details
+      </button>
 
-      <input
-        placeholder="Search Items e.g phones, computer, cars, electronic devices"
-        onChange={(event) => {
-          SetSearchTerm(event.target.value);
-        }}
-      />
+      {modal && (
+        <div className="modal">
+          <div onClick={toggleModal} className="overlay"></div>
+          <div className="modal-content">
 
-      <div className="cardsBox">
-        {data
-          .filter((item) => {
-            if (searchTerm === "") {
-              return item;
-            } else if (
-              item.categories.toLowerCase().includes(searchTerm.toLowerCase())
-            ) {
-              return item;
-            } else return false;
-          })
-          .map((item) => {
+           
+          {/* {dataitem.map((item) => {
             return (
-              <Cards
+              <ItemDetails
                 key={item.id}
                 img={item.img}
                 price={item.price}
                 name={item.name}
               />
             );
-          })}
-          <Cart />
-      </div>
-      <Footer />
-    </div>
+          })} */}
+            {/* <button className="cus-btn">Add item</button> */}
+            <Cart />
+          </div>
+        </div>
+      )}
+    </>
   );
-}
-
-export default App;
+};
+export default Modal;
