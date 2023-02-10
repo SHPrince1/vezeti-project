@@ -1,6 +1,6 @@
 import React from "react";
 import style from "../styles/card.module.css";
-import Modal from "../components/modal";
+import Modal from "./modal";
 const Cards = (props) => {
   return (
     <>
