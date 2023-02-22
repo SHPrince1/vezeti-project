@@ -210,7 +210,7 @@ function App() {
               />
             );
           })}
-        <Cart />
+        {/* <Cart /> */}
       </div>
       <Footer />
     </div>
