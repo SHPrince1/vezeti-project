@@ -1,9 +1,9 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import style from "../styles/card.module.css";
-import Modal from "./modal";
+// import Modal from "./modal";
 const Cards = (props) => {
-  const counter = useSelector((state) => state.counter);
+  // const counter = useSelector((state) => state.counter);
   const dispatch = useDispatch();
 
   const increment = () => {
@@ -12,7 +12,9 @@ const Cards = (props) => {
 
   const decrement = () => {
     dispatch({ type: "DEC" });
-  };
+  }; 
+
+  
 
   return (
     <>

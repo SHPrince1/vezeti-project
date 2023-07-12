@@ -1,7 +1,7 @@
 import React from "react";
 import style from "../styles/header.module.css";
 import cart from "../images/cart.jpeg";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector  } from "react-redux";
 
 const Header = () => {
   const counter = useSelector((state) => state.counter);
