@@ -66,6 +66,11 @@ button {
   -o-border-radius: 20px;
   cursor: pointer;
 }
+.Btn{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
 
 @media only screen and (max-width: 1200px) {
   /*Tablets [601px -> 1200px]*/

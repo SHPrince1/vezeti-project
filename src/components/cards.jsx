@@ -1,7 +1,19 @@
 import React from "react";
+import { useSelector, useDispatch } from "react-redux";
 import style from "../styles/card.module.css";
 import Modal from "./modal";
 const Cards = (props) => {
+  const counter = useSelector((state) => state.counter);
+  const dispatch = useDispatch();
+
+  const increment = () => {
+    dispatch({ type: "INC" });
+  };
+
+  const decrement = () => {
+    dispatch({ type: "DEC" });
+  };
+
   return (
     <>
       <div className={style.parentBox}>
@@ -16,7 +28,11 @@ const Cards = (props) => {
           <div className={style.priceBox}>
             <p className={style.price}>{props.price}</p>
 
-            <Modal />
+            {/* <Modal /> */}
+            <div className={style.Btn}>
+              <button onClick={increment}>ADD</button>
+              <button onClick={decrement}>Remove</button>
+            </div>
           </div>
         </div>
       </div>
