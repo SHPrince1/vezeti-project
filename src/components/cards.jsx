@@ -1,5 +1,5 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
+import {  useDispatch } from "react-redux";
 import style from "../styles/card.module.css";
 // import Modal from "./modal";
 const Cards = (props) => {
