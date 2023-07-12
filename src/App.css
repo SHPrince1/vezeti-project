@@ -39,7 +39,7 @@
 input{
   width:520px;
   height: 30px;
-  margin: 56px 20px;
+  margin: 109px -100px;
   border-radius: 35px;
   padding: 5px 20px;
   -webkit-border-radius: 35px;
@@ -50,7 +50,7 @@ input{
 .cardsBox{
   /* border: 1px solid black; */
   width: 80%;
-  margin:20px auto;
+  margin:-10px auto;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
