@@ -1,21 +1,21 @@
 import { createStore } from 'redux';
-const reducer = (state = {counter:0}, action) => {
+const reducer = (cart = {cart:0}, action) => {
     // console.log('reducer called');
     if (action.type ==="INC") {
-        return {counter:state.counter + 1};
+        // let tempCart = cart.filter((item)=> item.id===action.payload.id)
+        return {cart:cart.cart + 1}; 
     }
     if (action.type ==="DEC") {
-        return {counter:state.counter - 1};
+        return {cart:cart.cart - 1};
     }
     // if (action.type === 'ADD'){
-    //     return {counter:state.counter + action.payload}
+    //     return {counter:cart.counter + action.payload}
     // }
     
   
-    return state;
+    return cart;
   };
   
 const store = createStore(reducer);
-
 
 export default store;

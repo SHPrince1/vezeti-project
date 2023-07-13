@@ -7,7 +7,7 @@ const Cards = (props) => {
   const dispatch = useDispatch();
 
   const increment = () => {
-    dispatch({ type: "INC" });
+    dispatch({ type: "INC", payload:props });
   };
 
   const decrement = () => {

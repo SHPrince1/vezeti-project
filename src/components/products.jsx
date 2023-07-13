@@ -1,15 +1,12 @@
-import Header from "./components/header.jsx";
-import "./App.css";
-import Footer from "./components/footer.jsx";
-import Cards from "./components/cards.jsx";
-// import AddButton from "./components/add-button.tsx";
-// import RemoveBtn from "./components/remove-button.tsx";
-// import FilterBar from "./components/filter-bar.tsx";
+import Header from "../components/header.jsx";
+import "../App.css";
+import Footer from "../components/footer.jsx";
+import Cards from "../components/cards.jsx";
+
+
 import { useState } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Products from "./components/products.jsx";
-// import Cart from "./src/components/carts.js";
-import Cart from "../src/components/cart";
+import {  useDispatch } from "react-redux";
+// import Cart from "../src/components/cart";
 // import  from "../src/images/awatch.jpg";
 
 const data = [
@@ -177,22 +174,57 @@ const data = [
   },
 ];
 
-function App() {
-  // const [cart, setCart] = useState({});
+const Products = () => {
+    const [searchTerm, SetSearchTerm] = useState("");
 
-  return (
-    <div>
-      <Router>
+    const dispatch = useDispatch();
 
-      <Header />
-        <Routes>
-          <Route exact path="/" element={<Products />}></Route>
-          <Route exact path="/cart" element={<Cart />}></Route>
-        
-        </Routes>
-      </Router>
-    </div>
-  );
-}
+    const increment = () => {
+      dispatch({ type: "INC" });
+    };
+  
+    const decrement = () => {
+      dispatch({ type: "DEC" });
+    }; 
 
-export default App;
+    return (
+      <div className="App">
+       
+  
+        <input
+          placeholder="Search Items e.g phones, computer, cars, electronic devices"
+          onChange={(event) => {
+            SetSearchTerm(event.target.value);
+          }}
+        />
+  
+        <div className="cardsBox">
+          {data
+            .filter((item) => {
+              if (searchTerm === "") {
+                return item;
+              } else if (
+                item.categories.toLowerCase().includes(searchTerm.toLowerCase())
+              ) {
+                return item;
+              } else return false;
+            })
+            .map((item) => {
+              return (
+                <Cards
+                  key={item.id}
+                  img={item.img}
+                  price={item.price}
+                  name={item.name}
+                  />
+                  );
+                 
+            })}
+          {/* <Cart /> */}
+        </div>
+        <Footer />
+      </div>
+    );
+  }
+
+export default Products
